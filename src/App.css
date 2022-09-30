@@ -1,38 +1,90 @@
-.App {
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f9;
+  font-family: -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    Liberation Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  background-color: rgb(236, 233, 233);
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main:hover {
+
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.sucess_mesage {
+  margin-top: 10px;
+  color: rgb(50, 184, 50);
+  padding: 10px 1rem 10px 1rem;
+  letter-spacing: 2px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.haeding {
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  margin-top: 20px;
+  padding: 10px 4rem 10px 4rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+
+
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 4rem 10px 4rem;
+  font-size: 22px;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  font-family: 300;
+  border: 1px solid rgb(44, 182, 44);
+  color: rgb(44, 182, 44);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(44, 182, 44);
+  color: #fff;
+  box-shadow: 0 0 25px rgb(44, 182, 44);
+}
+
+
+.err_maseage {
+  margin-top: 5px;
+  color: red;
 }
