@@ -17,28 +17,21 @@ const Registration = () => {
     const submithandler = (e) => {
         e.preventDefault();
 
-        if (!firstName && !lastName && !email) {
-            setfirstNameErr("please Enter a firstName");
-            setlastNameErr("please Enter a lastName");
-            setemailErr("please Enter a Email");
-        } else {
+        if (!firstName) {
+            setfirstNameErr("please Enter a firstName ")
+        } if (!lastName) {
+            setlastNameErr("please Enter a lastName")
+        } if (!email) {
+            setemailErr("please Enter a Email")
+        } if (firstName && lastName && email) {
 
-            if (!firstName) {
-                setfirstNameErr("please Enter a firstName ")
-            } else if (!lastName) {
-                setlastNameErr("please Enter a lastName")
-            } else if (!email) {
-                setemailErr("please Enter a Email")
-            } else {
+            setValue("Successfull")
 
-                setValue("Successfull")
-            }
+            setfirstName("")
+            setlastName("")
+            setemail("")
         }
 
-
-        setfirstName("")
-        setlastName("")
-        setemail("")
     }
 
 
